@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: php-weather-app
+    runtime: docker
+    plan: free
+    healthCheckPath: /health.php
+    autoDeploy: true
+    envVars:
+      - key: CACHE_TTL
+        value: "600"

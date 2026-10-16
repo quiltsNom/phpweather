@@ -1,0 +1,9 @@
+services:
+  weather:
+    build: .
+    image: php-weather-app:latest
+    ports:
+      - "8080:80"
+    environment:
+      CACHE_TTL: "600"
+    restart: unless-stopped
