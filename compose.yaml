@@ -3,7 +3,7 @@ services:
     build: .
     image: php-weather-app:latest
     ports:
-      - "8080:80"
+      - "8080:7860"
     environment:
       CACHE_TTL: "600"
     restart: unless-stopped
